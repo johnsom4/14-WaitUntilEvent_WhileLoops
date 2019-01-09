@@ -354,7 +354,7 @@ def prime_gap(m):
     # -------------------------------------------------------------------------
     x = 2
     while True:
-        if (next_prime((x + 1) - x)) >= m:
+        if (next_prime(x + 1) - x) >= m:
             return x
         x = next_prime(x + 1)
 
